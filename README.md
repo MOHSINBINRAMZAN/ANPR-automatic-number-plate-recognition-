@@ -1,42 +1,24 @@
-**Automatic Number Plate Recognition (ANPR) using YOLOv8**
-This project implements an Automatic Number Plate Recognition (ANPR) system using the state-of-the-art YOLOv8 (You Only Look Once, version 8) object detection model. ANPR systems are critical for applications such as toll collection, traffic law enforcement, and vehicle access control.
+# automatic-number-plate-recognition-python-yolov8
 
-**Features**
-**Real-Time Detection**: Utilizes YOLOv8 for real-time detection of number plates from video streams or images.
+<p align="center">
+<a href="https://www.youtube.com/watch?v=fyJB1t0o0ms">
+    <img width="600" src="https://utils-computervisiondeveloper.s3.amazonaws.com/thumbnails/with_play_button/anpr_yolo2.jpg" alt="Watch the video">
+    </br>Watch on YouTube: Automatic number plate recognition with Python, Yolov8 and EasyOCR !
+</a>
+</p>
 
-**High Accuracy:** Leveraging the latest advancements in the YOLO model for improved accuracy and performance.
+## data
 
-**Flexible Input Sources:** Supports both static images and live video streams as input.
+The video I used in this tutorial can be downloaded [here](https://drive.google.com/file/d/12sBfgLICdQEnDSOkVFZiJuUE6d3BeanT/view?usp=sharing).
 
-**Easy Integration:** Modular code design allows for easy integration into existing systems or further development.
+## models
 
-**Cross-Platform:** Developed using Python, making it compatible with various operating systems.
+A Yolov8 pretrained model was used to detect vehicles.
 
-**Project Structure**
+A licensed plate detector was used to detect license plates. The model was trained with Yolov8 using [this dataset](https://universe.roboflow.com/roboflow-universe-projects/license-plate-recognition-rxg4e/dataset/4) and following this [step by step tutorial on how to train an object detector with Yolov8 on your custom data](https://github.com/computervisioneng/train-yolov8-custom-dataset-step-by-step-guide). 
 
-**data/:** Directory containing sample images and videos for testing.
+The trained model is available in my [Patreon](https://www.patreon.com/ComputerVisionEngineer).
 
-**models/:** Pre-trained YOLOv8 models and configuration files.
+## dependencies
 
-**src/**: Source code for ANPR system, including:
-
-**detection.py:** Script for number plate detection.
-
-**recognition.py:** Script for number plate recognition (character extraction).
-
-**utils.py:** Utility functions for image processing and data handling.
-
-**notebooks/:** Jupyter notebooks for experimenting with the model and visualizing results.
-
-**requirements.txt**: List of required Python packages.
-
-**Future Work**
-
-**Enhanced Recognition**: Integrate advanced OCR (Optical Character Recognition) techniques for improved number plate reading.
-
-**Dataset Expansion:** Expand the training dataset to include a wider variety of number plates from different regions.
-
-**Performance Optimization:** Optimize the detection pipeline for faster processing on resource-constrained devices.
-
-**Contributing**
-Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
+The sort module needs to be downloaded from [this repository](https://github.com/abewley/sort) as mentioned in the [video](https://youtu.be/fyJB1t0o0ms?t=1120).
